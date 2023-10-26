@@ -1,3 +1,8 @@
+# important stuff
 .next
 node_modules
 .env
+
+# seed data
+members.json
+events.json
