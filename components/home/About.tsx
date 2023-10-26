@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import type { Members } from "@prisma/client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   AcademicCapIcon,
@@ -31,18 +32,17 @@ const features = [
 ];
 
 export default function About() {
-  const [exco, setExco] = useState([]);
+  const [exco, setExco] = useState<Members[]>([]);
 
   useEffect(() => {
     const getMembers = async () => {
-      try {
-        const res = await fetch(
-          "https://3dc-nextra-phi.vercel.app/api/members/get"
-        ).then((res) => res.json());
-        setExco(res);
-      } catch (e) {
-        console.error(e);
-      }
+      const res: Members[] = await fetch(
+        "https://localhost:3000/api/members/get"
+      )
+        .then((res) => res.json())
+        .catch((e) => console.error(e));
+
+      setExco(res);
     };
 
     getMembers();
@@ -108,7 +108,13 @@ export default function About() {
               ></iframe> "ratio ratio-16x9 " */}
               <div className="exco-profilecard  lg:px-4 lg:pt-40 flex gap-4 overflow-auto">
                 {exco.map((member, key) => (
-                  <ExcoCards key={key} {...member} />
+                  <ExcoCards
+                    key={key}
+                    {...member}
+                    description="Lorem ipsum"
+                    telegram="testTelegram"
+                    href="test"
+                  />
                 ))}
               </div>
             </div>
