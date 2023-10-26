@@ -2,11 +2,12 @@
 
 ## Launch Postgres Docker instance
 
-```docker compose up -d```
+```bash
+docker compose up -d```
 
 ## Setup local DB instance
 
-```
+```bash
 npx prisma db seed
 npx prisma migrate dev
 npx prisma db push
@@ -14,7 +15,8 @@ npx prisma db push
 
 ## Start the local dev server
 
-```npm run dev```
+```bash
+npm run dev```
 
 ## Profit
 
