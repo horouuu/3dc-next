@@ -1,0 +1,23 @@
+{
+  "index": {
+    "title": "Home",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "about": {
+    "title": "About",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    }
+  }
+}

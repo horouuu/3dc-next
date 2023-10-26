@@ -1,0 +1,9 @@
+import Projects from "@components/projects";
+
+export default function App() {
+  return (
+    <div>
+      <Projects />
+    </div>
+  );
+}
