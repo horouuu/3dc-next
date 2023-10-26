@@ -49,27 +49,6 @@ export default function Events() {
             date with events and find teammates here.
           </p>
 
-          {/* <div className="event-list">
-            {events.map((event, index) => (
-              <EventCard
-                key={index}
-                title={event.title}
-                date={event.date}
-                description={event.description}
-              />
-              
-            ))}
-          </div> */}
-
-          {/* <div className="hidden md:flex">
-            <img
-              className="rounded-md object-cover"
-              alt="feature image"
-              src="/home/events.jpg"
-              width="250"
-              height="250"
-            />
-          </div> */}
           <div className="flex">
             <a href="/events" className="">
               Show More
@@ -79,13 +58,6 @@ export default function Events() {
 
         <RightSide>
           <div className="lg:flex space-y-4 ">
-          {/* <img
-
-            className="rounded-md object-cover"
-            alt="feature image"
-            src="/home/events.jpg"
-          /> 
-          */}
             <div className=" event-list px-4 py-4 flex gap-4 overflow-auto">
               {data.map((event, index) => (
               <ShowcaseCard

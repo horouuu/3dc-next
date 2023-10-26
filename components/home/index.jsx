@@ -1,17 +1,9 @@
-import { Button } from "@material-tailwind/react";
-import ClubLogo from "../ClubLogo";
-import CategoryCards from "../CategoryCards";
-import Feature from "../Feature";
 import Hero from "./Hero";
-import About from "./About";
+import About from "./About.tsx";
 import Newsletter from "./Newsletter";
 import Disclaimer from "./Disclaimer";
 import Events from "./Events";
-import Example from "@components/Footer";
 import React, { useEffect, useRef, useState} from "react";
-import { Reveal } from "./Reveal";
-import Box from "./ScrollAnimationTrigger";
-import {Shapes} from "./OnScroll";
 
 const RevealOnScroll = ({ children }) => {
   const [isVisible, setIsVisible] = useState(false);
