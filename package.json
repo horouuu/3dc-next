@@ -38,6 +38,7 @@
     "tailwindcss-animated": "^1.0.1"
   },
   "devDependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
     "@types/node": "18.11.10",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
