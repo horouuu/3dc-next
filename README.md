@@ -3,7 +3,8 @@
 ## Launch Postgres Docker instance
 
 ```bash
-docker compose up -d```
+docker compose up -d
+```
 
 ## Setup local DB instance
 
@@ -16,7 +17,8 @@ npx prisma db push
 ## Start the local dev server
 
 ```bash
-npm run dev```
+npm run dev
+```
 
 ## Profit
 
